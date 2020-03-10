@@ -1,0 +1,79 @@
+﻿@model User
+
+
+<h1>Enter your Information</h1>
+<form action="register" method="POST">
+    <div class="col">
+        <div class="row">
+            <span asp-validation-for="FirstName"></span>
+        </div>
+
+        <div class="row">
+            <span asp-validation-for="LastName"></span>
+        </div>
+        
+        <div class="row">
+            <span asp-validation-for="Age"></span>
+        </div>
+        
+        <div class="row">
+            <span asp-validation-for="Email"></span>
+        </div>
+        
+        <div class="row">
+            <span asp-validation-for="Password"></span>
+        </div>
+
+        <div class="row my-1">
+            <div class="col">
+                <label asp-for="FirstName">First Name</label>
+            </div>
+            <div class="col">
+                <input asp-for="FirstName" type="text"/>    
+            </div>
+        </div>
+        
+        <div class="row my-1">
+            <div class="col">
+                <label asp-for="LastName">Last Name</label>
+            </div>
+            <div class="col">
+                <input asp-for="LastName" type="text"/>
+            </div>
+        </div>
+
+        <div class="row my-1">
+            <div class="col">
+                <label asp-for="Age">Age</label>
+            </div>
+            <div class="col">
+                <input asp-for="Age" type="number"/>
+            </div>
+        </div>
+
+        <div class="row my-1">
+            <div class="col">
+                <label asp-for="Email">Email</label>
+            </div>
+            <div class="col">
+                <input asp-for="Email" type="email"/>
+            </div>
+        </div>
+
+
+        <div class="row my-1">
+            <div class="col">
+                <label asp-for="Password">Password</label>
+            </div>
+            <div class="col">
+                <input asp-for="Password" type="password"/>
+            </div>
+        </div>
+    </div>
+    <input class="btn btn-info" type="submit" value="Submit" />
+</form>
+
+
+
+
+
